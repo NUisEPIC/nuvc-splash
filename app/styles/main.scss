@@ -1,0 +1,156 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,700|Open+Sans+Condensed:300|Bitter:400,700);
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+$nupurple : rgb(69,29,82);
+
+.transparent {
+  opacity: 0;
+}
+
+hr {
+  @extend .row;
+  border-color: $nupurple;
+  border-width: 10px 0 0 0;
+  margin-bottom: 0;
+}
+
+header i {
+  @extend .col-xs-6;
+  @extend .col-xs-offset-3;
+  @extend .col-md-4;
+  @extend .col-md-offset-4;
+  text-align: center;
+  animation-iteration-count: infinite;
+}
+
+section.ideas {
+  background: url('../images/ideas.jpg');
+  background-size: cover;
+  background-position: center 60%;
+}
+
+h1.bitter {
+  font-family: 'Oswald', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 100pt;
+  text-shadow: -3px 3px gray,
+               3px -3px gray,
+               3px 3px gray,
+               -3px -3px gray;
+  margin: 0;
+  color: white;
+}
+
+section {
+  @extend .row;
+  .even {
+    background: rgb(69,29,82);
+  }
+  padding: 65px 0;
+}
+
+.impress {
+  @extend .col-sm-4;
+  @extend .col-xs-12;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60pt;
+  font-weight: 700;
+  @media all and (min-width: 1200px) {
+    font-size: 75pt;
+  }
+  text-shadow: 3px 3px darken($nupurple, 10%)
+            ,  4px 4px darken($nupurple, 9%)
+            ,  5px 5px darken($nupurple, 8%)
+            ,  6px 6px darken($nupurple, 7%)
+            ,  7px 7px darken($nupurple, 6%)
+            ,  8px 8px darken($nupurple, 5%)
+            ,  9px 9px darken($nupurple, 4%)
+            ,  10px 10px darken($nupurple, 4%)
+            ,  11px 11px darken($nupurple, 3.8%)
+            ,  12px 12px darken($nupurple, 3.6%)
+            ,  13px 13px darken($nupurple, 3.4%)
+            ,  14px 14px darken($nupurple, 3.2%)
+            ,  15px 15px darken($nupurple, 3%)
+            ,  16px 16px darken($nupurple, 2.8%)
+            ,  17px 17px darken($nupurple, 2.6%)
+            ,  18px 18px darken($nupurple, 2.4%)
+            ,  19px 19px darken($nupurple, 2.2%)
+            ,  20px 20px darken($nupurple, 2%)
+            ,  21px 21px darken($nupurple, 1.8%)
+            ,  22px 22px darken($nupurple, 1.6%)
+            ,  23px 23px darken($nupurple, 1.4%)
+            ,  24px 24px darken($nupurple, 1.2%)
+            ,  25px 25px darken($nupurple, 1%);
+  color: white;
+  text-transform: uppercase;
+  padding: 50px 0;
+  small {
+    @extend .col-xs-12;
+    font-size: 50%;
+  }
+}
+
+.row.even {
+  background: rgb(69,29,82);
+}
+
+.track-section {
+  h1 { font-size: 70pt; }
+  font-family: 'Oswald', sans-serif;
+  
+  .track {
+    font-size: 40pt;
+    margin-top: 80px;
+    font-weight: 300;
+    
+    i {
+      float: right;
+      &.fa-leaf {
+        color: lighten(green, 10%);
+      }
+      &.fa-group {
+        color: rgb(58, 58, 193);
+      }
+      &.fa-heart {
+        color: rgb(214, 60, 60);
+      }
+      &.fa-briefcase {
+        color: darken(brown, 10%);
+      }
+      &.fa-flask {
+        color: rgb(239, 144, 16);
+      }
+    }
+  }
+}
+
+footer {
+  @extend .row;
+  background: lighten(black, 20%);
+  display: inline-table;
+  vertical-align: middle;
+  height: 300px;
+  padding: 0 5%;
+  img {
+    width: 100%;
+  }
+  .kellogg, .farley, .epic {
+    width: 30%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
