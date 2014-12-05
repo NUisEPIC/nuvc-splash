@@ -9,3 +9,7 @@ $('.impress').waypoint(function() {
 $('.track').waypoint(function() {
   $(this).removeClass('transparent').addClass('animated fadeInLeft');
 }, { offset: '90%' });
+
+$('#video-overlay').on('ended', function() {
+  $(this).addClass('animated fadeOut');
+});
